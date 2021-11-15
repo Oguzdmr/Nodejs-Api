@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../public/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginPanel">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">Kayıt Paneli</div>
+          </div>
+          <div class="panel-body">
+            <form action="/login/signup" method="POST">
+              <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <input
+                  type="text"
+                  id="signup-name"
+                  class="form-control"
+                  name="name"
+                  placeholder="Ad"
+                />
+              </div>
+              <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <input
+                  type="text"
+                  id="signup-lastname"
+                  class="form-control"
+                  name="lastname"
+                  placeholder="Soyad"
+                />
+              </div>
+              <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <input
+                  type="text"
+                  id="signup-email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <input
+                  type="text"
+                  id="login-username"
+                  class="form-control"
+                  name="username"
+                  placeholder="Kullanıcı Adı"
+                />
+              </div>
+              <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-lock"></i
+                ></span>
+                <input
+                  type="text"
+                  id="login-password"
+                  class="form-control"
+                  name="password"
+                  placeholder="Şifre"
+                />
+              </div>
+              <div class="pull-right">
+                <input type="submit" class="btn btn-primary" value="Kaydet" />
+                <a href="/login" class="btn btn-default">Giriş Yap</a>
+              </div>
+            </form>
+          </div>
+          <div class="panel-footer clearfix">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
